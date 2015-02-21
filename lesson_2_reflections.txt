@@ -1,3 +1,29 @@
 What happens when you initialize a repository? Why do you need to do it?
     
     -a .git file is added to the directory. To enable version contol
+
+How is the staging area different from the working directory and the repository? What value do you think it offers?
+
+	-the staging area allows you to incrementally add files to it before commiting the files. I am assuming it also allows you to remove files from it.The staging area is separate from the working directory, like a virtual directory.
+
+How can you use the staging area to make sure you have one commit per logical change?
+
+	-by just commiting one file at a time, or being selective on the files you commit.
+
+What are some situations when branches would be helpful in keeping your history organized? How would branches help?
+	
+	-you can try new chnges leaving the main branch intact.
+
+How do the diagrams help you visualize the branch structure?
+
+	-you will be able to tell if your missing commits
+
+What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
+	
+	-all the commits of both branches are merged into the master. Because we move from having 2 branches into having 1.
+
+What are the pros and cons of Git’s automatic merging vs. always doing merges manually?
+
+	-pro is that git finds discrepencies in files that share changes, so that you know where discrepencies exist. 
+	-pro is that it does the work for you
+	-con is that it may merge changes that could potentally break something
